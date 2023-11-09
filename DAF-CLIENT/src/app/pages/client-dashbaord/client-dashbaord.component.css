@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 330px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 30px;
+}
+
+.left_area h3 {
+    color: #000000;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color:#6bb7df;
+}
+
+.logout_btn {
+    padding: 5px;
+    background:#6bb7df;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffffff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover {
+    background:#6bb7df;
+}
+
+.sidebar {
+  z-index: 1;
+  top: 0;
+  background:#fafafa;
+  margin-top: 75px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: calc(100% - 9%);
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+  /* border-right: 1px solid #ccc; 
+  border-top: 1px solid #ccc;/* Add a border to the right side of the sidebar */
+  /* border-radius: 15px; */ 
+}
+
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .profile_info .profile_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #000000;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background:#6bb7df;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #000000;
+    position: fixed;
+    cursor: pointer;
+    left: 230px;
+    font-size: 20px;
+    margin: 15px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color:#6bb7df;
+}
+
+#check:checked~.sidebar {
+    left: -185px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 165px;
+    width: 100%;
+}
+
+.content {
+  width: calc(100% - 250px);
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 250px;
+   
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#check:checked~.content {
+    margin-left: 60px;
+}
+
+#check:checked~.sidebar .profile_info {
+    display: none;
+}
+
+
+
+.mobile_nav {
+    display: none;
+}
+
+.content .card p {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+    .sidebar {
+        display: none;
+    }
+
+    #sidebar_btn {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 20px;
+        transition: 0s;
+    }
+
+    #check:checked~.content {
+        margin-left: 0;
+    }
+
+    .mobile_nav {
+        display: block;
+        width: calc(100% - 0%);
+    }
+
+    .nav_bar {
+        background: #222;
+        width: (100% - 0px);
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav_bar .mobile_profile_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .nav_bar .nav_btn {
+        color: #020202;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+    }
+
+    .nav_bar .nav_btn:hover {
+        color: #6bb7df;
+    }
+
+    .mobile_nav_items {
+        background: #2F323A;
+        display: none;
+    }
+
+    .mobile_nav_items a {
+        color: #000000;
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 60px;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+    }
+
+    .mobile_nav_items a:hover {
+        background:#6bb7df;
+    }
+
+    .mobile_nav_items i {
+        padding-right: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+}
+/* Example styles for project cards */
+.card {
+    position: relative;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+    width: 220px;
+    display: inline-block;
+    transition: transform 0.3s; /* Add a smooth transition for hover effect */
+  }
+  
+  .profile_image {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    height: 120px;
+    transition: transform 0.3s; /* Add a smooth transition for hover effect */
+  }
+  .card-content {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(91, 192, 208, 0.7);
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+  
+  .card:hover .profile_image {
+    filter: brightness(75%); /* Dim the image on hover */
+  }
+  
+  .card:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+  
+  .card i {
+    font-size: 1px;
+    color:#c2c2c2;
+  }
+  
+  
+  
+  .content {
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  /* Styles for the top row */
+  .card:nth-child(1),
+  .card:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the bottom row */
+  .card:nth-child(3),
+  .card:nth-child(4) {
+    margin-top: 10px;
+  }
+  /* Project Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Search and Add Section */
+  .search-add-section {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .search-add-section input {
+    width: 200px;
+    padding: 1%;
+    margin-right: 30px;
+  }
+  
+  .search-add-section button {
+    padding: 5px 10px;
+    background-color: #6bb7df;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Table */
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Table header */
+  .table th {
+    background-color:#6bb7df;
+    color: white;
+  }
+  
+  /* Styling for alternating rows */
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Styling for odd rows */
+  .table tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  .search-add-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-add-section i {
+    font-size: 20px;
+    margin-right: 10px; /* Adjust the margin between the search icon and input */
+    color: #6bb7df;
+    margin-left: 920px;
+  }
+  
+  .search-add-section input {
+    padding: 5px; /* Add padding to the input for space */
+  }
+  
+  .add-button {
+     /* Add padding to the "Add" button for space */
+    background-color:#6bb7df;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+  }
+  

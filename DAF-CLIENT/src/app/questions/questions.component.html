@@ -1,0 +1,78 @@
+<div class="faq-area default-padding bg-gray">
+    <div class="container">
+        <div class="faq-items">
+            <div class="row">
+
+                <div class="col-lg-5 info">
+                    <h5>FAQ</h5>
+                    <h2>Most common questions about our services</h2>
+                    <!-- <a href="#" class="btn btn-theme effect btn-md">View All</a> -->
+                  </div>
+                  
+                  <div class="col-lg-7">
+                    <div class="faq-content">
+                      <div class="accordion" id="accordionExample">
+                        <div *ngFor="let item of questions" class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center" [id]="'heading' + item.id">
+                              <h4 class="mb-0">
+                                {{item.attributes.Question}}
+                              </h4>
+                              <button class="btn btn-link" type="button" data-toggle="collapse" [attr.data-target]="'#collapse' + item.id"
+                                [attr.aria-controls]="'collapse' + item.id">
+                                <i class="fas fa-chevron-down"></i>
+                              </button>
+                            </div>
+                          
+                            <div [id]="'collapse' + item.id" class="collapse" [attr.aria-labelledby]="'heading' + item.id"
+                              data-parent="#accordionExample">
+                              <div class="card-body">
+                                <p>{{item.attributes.Answer}}</p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                            <!-- <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h4 class="mb-0" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        How long should a business plan be? </h4>
+                                </div>
+
+                                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>
+                                            Continue building numerous of at relation in margaret. Lasted engage roused
+                                            mother an am at. Other early while if by do to. Missed living excuse as be.
+                                            Cause heard fat above first time achivement. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h4 class="mb-0" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">
+                                        Where do I start? </h4>
+                                </div>
+
+                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p>
+                                            Continue building numerous of at relation in margaret. Lasted engage roused
+                                            mother an am at. Other early while if by do to. Missed living excuse as be.
+                                            Cause heard fat above first time achivement. </p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

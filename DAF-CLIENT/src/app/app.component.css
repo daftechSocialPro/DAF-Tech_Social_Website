@@ -1,0 +1,23 @@
+/* Styles for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Adjust the layout and design here */
+  }
+  
+  /* Styles for screens between 601px and 1200px */
+  @media (min-width: 601px) and (max-width: 1200px) {
+    /* Adjust the layout and design here */
+  }
+  
+  /* Styles for screens larger than 1200px */
+  @media (min-width: 1201px) {
+    /* Adjust the layout and design here */
+  }
+
+  .p-toast-custom {
+    /* Custom styles */
+    width: 400px;
+    height: 200px;
+  }
+  
+
+@import "~@flaticon/flaticon-uicons/css/all/all";

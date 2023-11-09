@@ -1,0 +1,30 @@
+/* styles.css */
+
+.client-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 19px;
+}
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+  .client-image {
+    max-height: 8px;
+  }
+}
+
+/* Adjust image size for even smaller screens */
+@media (max-width: 480px) {
+  .client-image {
+    max-height: 5px;
+  }
+}
+
+.carousel-container {
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.carousel-container .item {
+  padding: 0 0px;
+}

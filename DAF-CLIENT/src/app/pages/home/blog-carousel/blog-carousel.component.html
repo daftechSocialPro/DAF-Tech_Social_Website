@@ -1,0 +1,50 @@
+<!-- Start Blog 
+============================================= -->
+<div class="blog-area content-less default-padding bottom-less">
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+          <div class="site-heading text-center">
+               <h4>POPULAR NEWS</h4>
+              <h2>Latest From our blog</h2>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="container" style="margin-left: 350px;">
+    <div class="blog-items">
+      <div class="row"> 
+    
+           
+    <div *ngFor=" let item of blogs " class="col-lg-4 col-md-6 single-item" style="  margin-left: 20px; " >
+    <div class="item wow fadeInUp">
+    <div class="thumb">
+      <a class="btn-simple" (click)="goToDetail(item.id)">
+      <img  width="600" height="400" style="max-height: 400;" [src]="getImagePath(item.attributes.Image)" class="attachment-tanda-blog-sidebar size-tanda-blog-sidebar wp-post-image" alt=""    />  
+    
+    </a>
+   
+    </div>
+    <div class="info">
+    <div class="meta">
+      <ul>
+          <li><i class="fas fa-calendar-alt"></i> {{item.attributes.createdAt | date:"dd-MMM-yyy"}}</li>
+          <li><i class="fas fa-user"></i><a href="https://wpriverthemes.com/tandaelem" title="Visit admin&#8217;s website" rel="author external">{{item.attributes.CreatedBy}}</a></li>
+      </ul>
+    </div>
+    <h4>
+      <a class="btn-simple" (click)="goToDetail(item.id)">{{item.attributes.Title}}</a>
+    </h4>
+      <p>{{item.attributes.Description | slice: 0:100}}...</p>
+    <a class="btn-simple" (click)="goToDetail(item.id)">Read More <i class="fas fa-angle-right"></i></a>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    </div>
+    </div>
+    </div>
+    </div>
+   

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@flaticon/flaticon-uicons/css/all/all";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+/* styles.css */
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    color: #888;
+  }
+

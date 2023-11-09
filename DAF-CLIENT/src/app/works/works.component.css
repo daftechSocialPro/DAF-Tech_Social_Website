@@ -1,0 +1,23 @@
+.fun-fact {
+    /* Add your desired styling properties here */
+    /* For example: */
+    width: 200px;
+    height: 100px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer::after {
+    display: none;
+  }
+  .col-lg-6 info::after{
+    display: none;
+
+  
+  }
+
+  .mb-0::after {
+    display: none;
+  }
+  

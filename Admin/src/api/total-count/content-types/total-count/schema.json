@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "total_counts",
+  "info": {
+    "singularName": "total-count",
+    "pluralName": "total-counts",
+    "displayName": "TotalCount",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Number": {
+      "type": "biginteger"
+    },
+    "Namess": {
+      "type": "string"
+    }
+  }
+}

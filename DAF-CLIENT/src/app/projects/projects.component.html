@@ -1,0 +1,63 @@
+ <!-- Start Case Studies Area
+============================================= -->
+<div class="case-studies-area half-bg default-padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="site-heading text-center">
+          <h4>Case Studies</h4>
+          <h2>Our Work Showcase</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fill">
+
+    <owl-carousel-o [options]="customOptionms"  class="carousel-container">
+      <ng-container *ngFor="let item of projects">
+        <ng-template carouselSlide [id]="item.id">
+              <div class="item">
+        <div class="thumb" *ngIf="item.id === 1">
+          <a href="#oromia"> <img decoding="async" [src]="getImagePath(item.attributes.Picture)" style="max-height: 400px;" alt="Thumb"> </a>
+        </div>
+        <div class="thumb" *ngIf="item.id === 9">
+          <a href="#" >  <img decoding="async" [src]="getImagePath(item.attributes.Picture)" style="max-height: 400px;" alt="Thumb"> </a>
+        </div>
+        <div class="thumb" *ngIf="item.id === 4">
+          <a href="# new"> <img decoding="async" [src]="getImagePath(item.attributes.Picture)" style="max-height: 400px;" alt="Thumb"> </a>
+        </div>
+        <div class="thumb" *ngIf="item.id === 3">
+          <a href="https://www.gloryrealestateplc.com/" target="_blank">  <img decoding="async" [src]="getImagePath(item.attributes.Picture)" style="max-height: 400px;" alt="Thumb"> </a>
+        </div>
+        <div class="thumb" *ngIf="item.id === 10">
+          <a href="#" >  <img decoding="async" [src]="getImagePath(item.attributes.Picture)" style="max-height: 400px;" alt="Thumb"> </a>
+        </div>
+        <div class="thumb" *ngIf="item.id === 11">
+          <a href="#" >  <img decoding="async" [src]="getImagePath(item.attributes.Picture)" style="max-height: 400px;" alt="Thumb"> </a>
+        </div>
+            <div class="info">
+              <div class="info-items">
+                <div class="left-info">
+                  <h4>
+                    <a href="#">{{item.attributes.Title}}</a>
+                  </h4>
+                  <ul>
+                    <li style="color: rgb(0, 0, 0);">{{item.attributes.Description}}</li>
+                  </ul>
+                </div>
+                <div class="right-info">
+                  <!-- <a class="item popup-gallery" href="assets/wp-content/uploads/2022/01/1-1.jpg"><i class="fas fa-plus"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+    
+ 
+  </div>
+
+
+
+</div>

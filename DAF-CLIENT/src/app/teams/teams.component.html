@@ -1,0 +1,50 @@
+
+<div class="team-area default-padding bottom-less">
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="site-heading text-center">
+            <h4>Expert Team</h4>
+            <h2>Meet Our Leadership</h2>
+        </div>
+    </div>
+  </div>
+  </div>
+    <div class="container">
+  <div class="team-items text-center">
+    <div class="row">
+  
+  
+        <div *ngFor="let item of teams" class="single-item col-lg-4 col-md-6">
+            <div class="item">
+              <div class="thumb">
+                <img width="600" height="400" style="max-height: 400;" [src]="getImagePath(item.attributes.Photo)" alt="Thumb">
+                <div class="social">
+
+                  <input type="checkbox" id="toggle{{item.id}}" class="share-toggle" hidden>
+                  
+                  <label for="toggle{{item.id}}" class="share-button">
+                    <i class="fas fa-plus"></i>
+                  </label>
+                 
+                  <a [href]="item.id === 4 ? 'https://www.linkedin.com/in/denekew-berihun-40034935/' : (item.id === 3 ? '' : (item.id === 5 ? '' : '#'))" target="_blank" class="share-icon facebook">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="share-icon linkedin">
+                    <i class="fab fa-twitter"></i>
+                    
+                  </a>
+            
+              </div>
+              </div>
+              <div class="info">
+                <h4><a href="#">{{item.attributes.Name}}</a></h4>
+                <span>{{item.attributes.Position}}</span>
+              </div>
+            </div>
+          </div> 
+  
+  </div>
+  </div>
+  </div>
+  </div>

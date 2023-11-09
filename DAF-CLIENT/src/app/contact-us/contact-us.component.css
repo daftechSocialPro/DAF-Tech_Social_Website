@@ -1,0 +1,20 @@
+button#submit {
+    background-color: #0031f4;
+    color: white;
+    border-radius: 50px;
+  }
+  
+  /* Styles for the disabled button */
+  button#submit:disabled {
+    background-color: #CCCCCC;
+    color: #888888;
+  }
+
+  #tab2 iframe {
+    box-shadow: 0 0 10px rgba(53, 74, 230, 0.9);
+  }
+
+
+
+  
+ 

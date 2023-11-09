@@ -1,0 +1,30 @@
+<h4 style="text-align:center; color:#3C82FF;  padding-top: 20px; text-transform:uppercase; margin-bottom: -70px;">Our
+  esteemed clients </h4>
+
+<!-- Start Clients 
+============================================= -->
+<div class="clients-area default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="">
+
+   
+      
+
+          <owl-carousel-o [options]="customOptions" class="carousel-container" >
+          <ng-container *ngFor="let item of clients">
+            <ng-template carouselSlide [id]="item.id" >
+              <a style="margin-right: 0px;">
+                <img decoding="async" [src]="getImagePath(item.attributes.ClientImage)" style="width: 70px;max-height: 90px;"
+                  [alt]="item.attributes.ClientName" class="hoverable-image">
+              </a>
+            </ng-template>
+          </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Clients Area -->

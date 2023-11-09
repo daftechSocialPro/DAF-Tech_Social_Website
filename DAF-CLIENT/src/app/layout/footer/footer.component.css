@@ -1,0 +1,16 @@
+ul.link li a {
+    
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px; /* Adjust the font size as desired */
+}
+
+ul.link li a:hover {
+   color: red;
+}
+#menu-footer-menu li a:hover {
+    color: #FF0000; /* Change to your desired hover color */
+    /* Add any other styles you want on hover, e.g., background-color, text-decoration, etc. */
+  }
+
+  

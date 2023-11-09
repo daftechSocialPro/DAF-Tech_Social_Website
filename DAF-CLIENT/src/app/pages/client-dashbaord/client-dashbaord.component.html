@@ -1,0 +1,112 @@
+<input type="checkbox" id="check">
+<!--header area start-->
+<header>
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left_area">
+        <h3><span>DAF TECH SOCIAL </span></h3>
+    </div>
+    <div class="right_area">
+        <!-- <a href="#" class="logout_btn">Logout</a> -->
+        <button class="logout_btn" (click)="logOut()">
+          <i class="pi pi-sign-out"></i>
+          <span>Log Out</span>
+        </button>
+    </div>
+</header>
+<!--header area end-->
+<!--mobile navigation bar start-->
+<div class="mobile_nav">
+    <div class="nav_bar">
+      
+    </div>
+    <div class="mobile_nav_items">
+        <a (click)="toggleProjectDetails()">Projects</a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Components</span></a>
+        <a href="#"><i class="fas fa-table"></i><span>Tables</span></a>
+        <a href="#"><i class="fas fa-th"></i><span>Forms</span></a>
+        <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    </div>
+</div>
+<!--mobile navigation bar end-->
+<!--sidebar start-->
+<div class="sidebar">
+    <!-- <div class="profile_info">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/programmer-doing-programming-3454631-2918520.png" class="profile_image" alt="">
+      
+    </div> -->
+    <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+    <a href="#"><i class="fas fa-envelope-open"></i><span>Message</span></a>
+    <a href="#"><i class="fas fa-table"></i><span>Projects</span></a>
+    <a href="#"><i class="fas fa-th"></i><span>Complient</span></a>
+  
+</div>
+<div class="content">
+    <!-- Top Row -->
+    <div class="card">
+     
+      <img src="https://www.slideteam.net/wp/wp-content/uploads/2022/03/Project-Priority-Assessment-Model-Priority-Project-Management-Dashboard-PPT-PowerPoint-Styles.png" class="profile_image" alt="">
+      
+      <i class="fas fa-bars"></i>
+      <div class="overlay">DireDawa</div>
+    </div>
+    <div class="card">
+        <img src="https://www.datapine.com/blog/wp-content/uploads/2021/08/project-controlling-dashboard.png" class="profile_image" alt="">
+        <i class="fas fa-bars"></i>
+      <div class="overlay">Mobile App</div>
+    </div>
+  
+    <!-- Bottom Row -->
+    <div class="card">
+        <img src="https://support.monday.com/hc/article_attachments/360022571279/article_attachments_360016275899_db1_en-us.png" class="profile_image" alt="">
+        <i class="fas fa-bars"></i>
+      <div class="overlay">Web App</div>
+    </div>
+    <div class="card">
+        <img src="https://cdn.boldbi.com/wp/pages/dashboards/information-technology/project-overview-mgmt.png" class="profile_image" alt="">
+        <i class="fas fa-bars"></i>
+      <div class="overlay">Oromia</div>
+    </div>
+    <div class="search-add-section">
+        <i class="fas fa-search"></i> 
+        <input type="text" placeholder="Search">
+        
+        <button>Add</button>
+      </div>
+    
+      <!-- Table -->
+      <table class="table">
+        <!-- Table header -->
+        <thead>
+          <tr>
+            <th>Project ID</th>
+            <th>Project TItle</th>
+            <th>Status</th>
+            <th>Created By</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mobile App</td>
+            <td>Pending</td>
+            <td>Admin</td>
+            <td>21/12/2022</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Data 2-1</td>
+            <td>Data 2-2</td>
+            <td>Data 2-3</td>
+            <td>Data 2-4</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    
+  
+</div>

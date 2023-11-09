@@ -1,0 +1,32 @@
+<div class="works-about-area overflow-hidden">
+    <div class="container">
+        <div class="works-about-items default-padding">
+            <div class="row align-center">
+                <div *ngFor="let item of works" class="col-lg-6 info">
+                 
+                    <h2>Trusted by 2,000+<br>Happy Customers</h2>
+                    <p>
+                        {{item.attributes.Description}}</p>
+                    <ul>
+                        <li > 
+                            <h5>100% Client Satisfaction</h5>
+                        </li>
+                        <li>
+                            <h5>World Class Worker</h5>
+                        </li>
+                    </ul>
+                  
+                </div>
+                <div *ngFor="let item of works" class="col-lg-6">
+                    <div class="thumb">
+                        <img decoding="async" [src]="getImagePath(item.attributes.Wpic)" alt="Thumb">
+                        <div class="fun-fact">
+                            <div class="timer" data-to="20" data-speed="5000">20</div>
+                            <span class="medium">Completed Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

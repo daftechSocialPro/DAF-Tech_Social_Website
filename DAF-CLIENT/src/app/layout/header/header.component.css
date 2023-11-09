@@ -1,0 +1,13 @@
+ul.link li a {
+    
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px; 
+}
+ul.link li a:hover {
+   color: rgb(235, 0, 0);
+}
+
+  
+  
+ 

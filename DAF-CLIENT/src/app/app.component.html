@@ -1,0 +1,11 @@
+<app-header *ngIf="!isInAdminDashboard && !isInLogin"></app-header>
+
+<p-toast></p-toast>
+
+<router-outlet>
+    
+</router-outlet>
+
+<app-footer *ngIf="!isInAdminDashboard && !isInLogin"></app-footer>
+
+

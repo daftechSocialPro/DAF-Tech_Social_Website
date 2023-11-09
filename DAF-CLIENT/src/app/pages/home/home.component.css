@@ -1,0 +1,86 @@
+/* Light Mode */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    --background-color: #333333;
+    --text-color: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  /* Center the modal */
+.modal.fade .modal-dialog {
+  transform: translate(0, 0);
+}
+
+
+.modal-backdrop {
+  background-color: #ffffff; }
+
+/* Center the modal content */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  height: 2px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+/* .modal-content form .form-group {
+
+} */
+.modal-content form input[type="email"],
+.modal-content form input[type="password"] {
+  width: 100%;
+  height: 2px; 
+  padding-top: 2px; 
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+}
+
+.modal-content {
+  max-width: 450px; 
+  color: black;
+  border-radius: 10%;
+  overflow: hidden;
+  background-image: url('https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-89757.jpg');
+  background-size: cover;
+  background-position: center;
+  position: center;
+
+}
+.modal-content form button {
+  display: block;
+  margin: 0 auto;
+}
+
+ 
+.form-control.underline-input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  background-color:transparent;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: border-bottom-color 0s ease-in-out;
+  outline: none; 
+}
+
+.form-control.underline-input:focus {
+  border-bottom-color: #82beff;
+  outline: none; 
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+}

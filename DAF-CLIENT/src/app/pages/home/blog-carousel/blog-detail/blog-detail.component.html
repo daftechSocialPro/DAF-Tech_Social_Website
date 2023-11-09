@@ -1,0 +1,120 @@
+
+<script>
+    // Add this code inside a <script> tag at the bottom of your HTML file
+  
+    // Function to scroll to the top of the page
+    function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+  
+    // Scroll to the top on page load/refresh
+    window.onload = scrollToTop;
+  </script>
+<div class="breadcrumb-area shadow dark bg-fixed text-light less-background">
+   
+    <div class="container ">
+        <div class="row align-center">
+            <div class="col-lg-6">
+                <h2>Consulted admitting is power acuteness.</h2>
+        </div>
+           
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+<!-- Start Blog
+============================================= -->
+<div class="blog-area single full-blog right-sidebar full-blog default-padding bottom-less">
+    <div class="container">
+        <div class="blog-items">
+            <div class="row">
+                                <div class="blog-content col-lg-8 col-md-12">
+                                   <div class="item">
+    <div class="blog-item-box">
+        <!-- Start Post Thumb -->
+        <div class="thumb">
+            <img width="600" height="400" [src]="getImagePath(blog.attributes.Image)" class="attachment-tanda-blog-sidebar size-tanda-blog-sidebar wp-post-image" alt="" sizes="(max-width: 600px) 100vw, 600px" />        </div>
+        <!-- Start Post Thumb -->
+
+        <div class="info">
+            <div class="meta">
+                <ul>
+                     <li><i class="fas fa-calendar-alt"></i>{{blog.attributes.createdAt | date:"dd-MMM-yyy"}}</li>
+                    <li><i class="fas fa-user"></i>{{blog.attributes.CreatedBy}}</li>
+                </ul>
+            </div>
+
+            <div *ngIf="blog.id === 3">
+                <p class="youtube"> Watch youtube for more &nbsp;  <a href="https://youtu.be/MkxJytgLjM8" style="color: red;" target="_blank"><i class="fab fa-youtube"></i></a></p>
+            </div>
+<b>{{blog.attributes.Title }}</b>
+
+
+
+<div class="description">
+    <p *ngFor="let paragraph of getFormattedDescription(blog.attributes.Description)">{{ paragraph }}</p>
+  </div>
+
+
+<div class="wp-block-columns is-layout-flex wp-container-3">
+<div class="wp-block-column is-layout-flow">
+<!-- <p>Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited.</p> -->
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow">
+<!-- <p>Exelent to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited better.</p> -->
+</div>
+</div>
+                        <!-- Start Post Tags-->
+            <div class="footer-entry">
+        <span> </span>
+              </div>
+<!-- End Post Tags -->
+        </div>
+    </div>
+</div>
+ 
+<!-- Start Post Pagination -->
+<div class="post-pagi-area">
+       
+        </div>
+             </div>
+                <!-- Start Sidebar -->
+                <div class="sidebar col-lg-4 col-md-12">
+                    <aside>
+                        <div id="search-1" class="sidebar-item widget_search"><div class="sidebar-item search">
+    <div class="sidebar-info">
+        <input type='search' name="s" (input)="filterList($event.target)" placeholder="Search Here..." class="form-control" id="search-box" >
+	        <button type="submit"><i class="fas fa-search"></i></button>
+       
+    </div>
+</div></div>
+		<div id="recent-posts-1" class="sidebar-item widget_recent_entries">
+		<div class="title"><h4>Recent Posts</h4>  </div>
+        <ul>
+            
+                <li *ngFor="let item of filteredBlogs">
+                    
+                        <a class="btn-simple" (click)="goToDetail(item)">{{ item.attributes.Title }}</a>
+            
+                </li>
+         
+              
+          </ul>
+
+		</div>
+			
+
+		<div class="title">
+</div>
+                           </aside>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</div>
+
